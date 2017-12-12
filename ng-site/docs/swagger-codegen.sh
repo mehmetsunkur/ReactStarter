@@ -1,0 +1,1 @@
+java -jar ~/dev/sdk/swagger-codegen/modules/swagger-codegen-cli/target/swagger-codegen-cli.jar generate -i http://localhost:3000/api/v2/api-docs -l typescript-angular -o typescript-angular-v4.3/npm  --additional-properties ngVersion=4.3
