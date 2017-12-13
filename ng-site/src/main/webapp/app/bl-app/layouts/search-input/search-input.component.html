@@ -1,0 +1,24 @@
+<div className='form-group'>
+  <div className='input-group'>
+      <input
+          className='form-control'
+          autoComplete='off'
+          type="text"
+          name="search"
+          value={value}
+          onChange={onChange}
+          onFocus={onFocus}
+          onBlur={onBlur}
+          onKeyDown={onKeyDown}/>
+      <span className='input-group-btn'>
+          <Button
+              primary
+              simple
+              round
+              type="button"
+              onClick={onSubmit}>
+              <i className='material-icons'>search</i>
+          </Button>
+      </span>
+  </div>
+</div>

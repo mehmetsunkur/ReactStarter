@@ -1,0 +1,21 @@
+
+    <li className='dropdown'>
+      <a href='#' className='dropdown-toggle'>
+          <i className='material-icons'>account_circle</i>{{customer.firstName}}
+      </a>
+      <ul className='dropdown-menu' styleName='HeaderControls__accountActions' >
+          <li>
+              <a routerLink='/account'>My Profile</a>
+          </li>
+          <li>
+              <a
+                  href='javascript:void(0);'
+                  onClick={onLogout}>
+                  <FormattedMessage
+                      id='home.logout'
+                      defaultMessage='Logout'
+                  ></FormattedMessage>
+              </a>
+          </li>
+      </ul>
+  </li>

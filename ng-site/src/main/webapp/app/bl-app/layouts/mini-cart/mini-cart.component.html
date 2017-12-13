@@ -1,0 +1,38 @@
+
+            <div className='dropdown'>
+              <a
+                  className='dropdown-toggle'
+                  styleName="MiniCart__toggle">
+                  <i className='material-icons'>shopping_cart</i>
+                  <span>{{itemCount}}</span>
+              </a>
+              <!-- {isOpened && ( -->
+                  <div styleName='MiniCart__overlay' onClick={this._onClose}>
+                      <ul className='dropdown-menu card'>
+                          <!-- {map(filter(cart.orderItem, o => !o.parentOrderItemId), this._renderItem)}
+                          {!!itemCount && ( -->
+                              <li styleName="MiniCart__dropdown__subTotal">
+                                  <div>
+                                      <span>Subtotal</span>:&nbsp;
+                                      <span>
+                                          {{format(cart.subTotal.amount, cart.subTotal.currency)}
+                                      </span>
+                                  </div>
+                              </li>
+                         <!--  )}
+                          {!!itemCount && ( -->
+                              <li styleName="MiniCart__dropdown__action">
+                                  <Link className='btn btn-primary' to="/cart">View your cart</Link>
+                              </li>
+                        <!--   )}
+                          {!itemCount && ( -->
+                              <li styleName='MiniCart__dropdown__empty'>
+                                  <div>
+                                      Your cart is empty
+                                  </div>
+                              </li>
+                       <!--    )} -->
+                      </ul>
+                  </div>
+  <!--             )} -->
+          </div>
